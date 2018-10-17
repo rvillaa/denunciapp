@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { AdminService } from "../../../../services/admin.service";
-//import swal from 'sweetalert2';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-userdetails',

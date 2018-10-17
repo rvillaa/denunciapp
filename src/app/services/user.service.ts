@@ -12,10 +12,10 @@ export class UserService {
   constructor(private http:Http) { }
 
   search(hall_type,price){
-    return this.http.post("http://localhost/Hall-Management-System/api/search.php",{"hall_type":hall_type,"price":price}).map(res=>res.json());
+    return this.http.post("http://localhost/Denunciapp/api/search.php",{"hall_type":hall_type,"price":price}).map(res=>res.json());
   }
   requestroom(indexno,hall_id,room_no){
-    return this.http.post("http://localhost/Hall-Management-System/api/requestRoom.php",{"indexno":indexno,"hall_id":hall_id,"room_no":room_no}).map(res=>res.json());
+    return this.http.post("http://localhost/Denunciapp/api/requestRoom.php",{"indexno":indexno,"hall_id":hall_id,"room_no":room_no}).map(res=>res.json());
   }
 
 }
